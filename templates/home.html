@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+home 
+{% endblock title %}
+
+{% block content %}
+<h1>hello world, from home page</h1>
+<h2>search: /post_details/1</h2>
+<h2>search: /post_details/2</h2>
+
+<p>
+    this page is supposed to display links to each post that takes you to its corresponding detials page.
+    unfortunatly i got an error, and was told that because it needs the database that we do not need to do it.
+    i was told it was a stretch goal, however it is not listed as a stretch goal. 
+</p>
+
+<h2 style='font-family: monospace;'>
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blog_details' not found. 'blog_details' is not a valid view function or pattern name.
+</h2>
+{% endblock content %} 
+
